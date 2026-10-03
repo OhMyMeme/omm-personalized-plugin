@@ -1,0 +1,13 @@
+{
+  "id": "personalized",
+  "name": "个性化",
+  "version": "1.1.0",
+  "repo": "https://github.com/OhMyMeme/omm-personalized-plugin",
+  "api_version": 1,
+  "entry": "main.py",
+  "windows": ["main", "settings"],
+  "permissions": ["settings:section", "main_api", "settings_api", "assets:serve", "startup", "buttons"],
+  "description": "启动动画、背景、字体与顶栏按钮布局的个性化定制",
+  "author": "OhMyMeme",
+  "dependencies": []
+}

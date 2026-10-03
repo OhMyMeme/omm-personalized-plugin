@@ -1,0 +1,123 @@
+/* 个性化插件 · 设置窗口控件样式（宿主经 register_css("settings") 注入） */
+
+.p-font-select {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.p-color { margin-top: 4px; }
+
+.p-color-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.p-color-top .p-cpick {
+  width: 34px;
+  height: 30px;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.p-color-top .p-chex {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--fg);
+  font-size: 13px;
+  font-family: Consolas, monospace;
+  outline: none;
+}
+
+.p-color-top .p-chex:focus { border-color: var(--accent); }
+
+.p-cswatch {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.p-color-rgba {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.p-color-rgba .p-clab { letter-spacing: 0.5px; }
+
+.p-color-rgba input[type="number"] {
+  width: 46px;
+  padding: 3px 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--fg);
+  font-size: 12px;
+  outline: none;
+}
+
+.p-color-rgba input[type="range"] {
+  flex: 1;
+  min-width: 80px;
+  accent-color: var(--accent);
+}
+
+.p-color-rgba .p-caval {
+  width: 28px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.p-intro-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 8px;
+}
+
+.p-intro-name {
+  font-size: 12px;
+  color: var(--fg-secondary);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p-intro-preview {
+  max-height: 180px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+}
+
+.p-intro-preview:empty { display: none; }
+
+.p-intro-preview img,
+.p-intro-preview video {
+  display: block;
+  max-width: 100%;
+  max-height: 180px;
+  border-radius: var(--radius-sm);
+  background: #000;
+}
